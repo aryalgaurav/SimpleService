@@ -55,3 +55,7 @@ Gradle for me is superior to maven.
 13. I did not use any of the spring boot actuator functions that are provided out of the box. I do not think anything like that was required for this project. But, since I did the project in spring boot, I wanted to mention that I did not work on those parts specifically.
 
 14. I did not worry about the OPEN API swagger documentation for this project.
+
+15. For Kafka - Please download the Kafka and start your zookeeper instance. Once the zookeeper instance starts, you can start the kafka server from the command line.
+Once the kafka server is running, you can create the kafka topic. In this project, I have defined the topic as ``KAFKA_TOPIC`` with the desired partition and number of nodes. Once the project publishes messages, you can see those published messages onto the kafka topic.
+Considering the kafka call takes certain time and considering that the project should not be blocked, the kafka client call should be async. This has not been covered for this project.

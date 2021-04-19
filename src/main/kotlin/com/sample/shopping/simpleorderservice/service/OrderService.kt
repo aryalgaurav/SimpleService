@@ -1,5 +1,7 @@
 package com.sample.shopping.simpleorderservice.service
 
+// import com.sample.shopping.simpleorderservice.client.KafkaClient
+import com.sample.shopping.simpleorderservice.client.MailClient
 import com.sample.shopping.simpleorderservice.controller.models.requests.ItemDetail
 import com.sample.shopping.simpleorderservice.controller.models.requests.ItemName
 import com.sample.shopping.simpleorderservice.controller.models.requests.ItemName.APPLE
@@ -17,6 +19,14 @@ class OrderService {
             totalCost += item.name.price.toFloat() * item.quantity
         }
         val totalDiscount = calculateDiscountOffers(itemDetails)
+
+        // Call kafka client to publish the messages to a kafka topic
+        // Ideally, this should be an async call so that we do not fail or wait our service on the kafka message publishing.
+        // Skipping that step/design for this task.
+
+        // KafkaClient().publishMessage(totalCost, totalDiscount)
+        MailClient().sendCustomerNotification()
+
         return ItemsCostResponse(
             finalCost = String.format("%.2f", totalCost - totalDiscount),
             totalDiscount = String.format("%.2f", totalDiscount)
