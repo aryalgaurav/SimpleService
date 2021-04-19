@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.sample.shopping.simpleorderservice.service.OrderServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-04-19T20:39:27" hostname="Reeyas-MBP" time="0.006">
+<testsuite name="com.sample.shopping.simpleorderservice.service.OrderServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-04-19T20:46:28" hostname="Reeyas-MBP" time="0.004">
   <properties/>
-  <testcase name="should apply no discount on only 1 apple()" classname="com.sample.shopping.simpleorderservice.service.OrderServiceTest" time="0.003"/>
+  <testcase name="should apply no discount on only 1 apple()" classname="com.sample.shopping.simpleorderservice.service.OrderServiceTest" time="0.002"/>
   <testcase name="should apply BOGO on apples()" classname="com.sample.shopping.simpleorderservice.service.OrderServiceTest" time="0.0"/>
-  <testcase name="should apply price of 4 oranges on a quantity of 6()" classname="com.sample.shopping.simpleorderservice.service.OrderServiceTest" time="0.001"/>
+  <testcase name="should apply price of 4 oranges on a quantity of 6()" classname="com.sample.shopping.simpleorderservice.service.OrderServiceTest" time="0.0"/>
   <testcase name="should apply no discount on only 2 oranges()" classname="com.sample.shopping.simpleorderservice.service.OrderServiceTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
