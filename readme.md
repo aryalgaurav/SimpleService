@@ -11,7 +11,7 @@ Input 1:
 	"itemDetails": [
 		{
 			"name": "APPLE",
-			"quantity": "1001"
+			"quantity": "5"
 		},
 		{
 			"name": "ORANGE",
